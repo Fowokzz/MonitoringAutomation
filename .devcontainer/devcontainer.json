@@ -1,0 +1,29 @@
+{
+    "name": "Terraform-Monitoring",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+    "features": {
+        "ghcr.io/devcontainers/features/terraform:1": {},
+        "ghcr.io/dhoeric/features/terraform-docs:1": {},
+        "ghcr.io/devcontainers/features/node:1": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/azure-cli:1": {},
+        "ghcr.io/devcontainers-contrib/features/ansible:2": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "hashicorp.terraform"
+            ],
+            "settings": {
+                "terraform.languageServer": {
+                    "enabled": true,
+                    "args": []
+                }
+            }
+        }
+    },
+    "remoteEnv": {
+        //"TF_LOG": "'info",
+        //"TF_LOG_PATH": "'./terraform.log"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "subscription_id": "**",
+    "budgets": [
+      {
+        "name": "Monthly Budget",
+        "amount": 1317,
+        "currency": "USD",
+        "start_date": "2024-04-30",
+        "end_date": "2024-12-31",
+        "notifications": [
+          {
+            "threshold": 80,
+            "contact_email": "**"
+          },
+          {
+            "threshold": 100,
+            "contact_email": "**"
+          }
+        ]
+      }
+    ],
+    "monitoring_alerts": [
+      {
+        "name": "Azure Budget Alert",
+        "resource_group": "${var.resource_group}",
+        "condition": "avg Percentage > 90",
+        "action": "send_email",
+        "email_recipients": ["**"]
+      }
+    ],
+
+
+    "subscription_id": "**",
+    "budgets": [
+      {
+        "name": "Monthly Budget",
+        "amount": 1187,
+        "currency": "USD",
+        "start_date": "2024-04-30",
+        "end_date": "2024-12-31",
+        "notifications": [
+          {
+            "threshold": 80,
+            "contact_email": "**"
+          },
+          {
+            "threshold": 100,
+            "contact_email": "**"
+          }
+        ]
+      }
+    ],
+    "monitoring_alerts": [
+      {
+        "name": "Azure Budget Alert",
+        "resource_group": "${var.resource_group}",
+        "condition": "avg Percentage > 90",
+        "action": "send_email",
+        "email_recipients": ["**"]
+      }
+    ],
+
+    
+    "subscription_id": "**",
+    "budgets": [
+      {
+        "name": "Monthly Budget",
+        "amount": 680,
+        "currency": "USD",
+        "start_date": "2024-04-30",
+        "end_date": "2024-12-31",
+        "notifications": [
+          {
+            "threshold": 80,
+            "contact_email":  ["**","**" ]
+          },
+          {
+            "threshold": 100,
+            "contact_email": ["**","**" ]
+          }
+        ]
+      }
+    ],
+    "monitoring_alerts": [
+      {
+        "name": "Azure Budget Alert",
+        "resource_group": "${var.resource_group}",
+        "condition": "avg Percentage > 90",
+        "action": "send_email",
+        "email_recipients":  ["**","**" ]
+      }
+    ]
+
+  }

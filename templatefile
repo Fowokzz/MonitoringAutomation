@@ -1,0 +1,21 @@
+# Generate JSON configuration using templatefile
+data "template_file" "config" {
+  template = file("${path.module}/info.json")
+
+  vars = {
+    # subscription_id         = var.subscription_id
+    # budget_amount           = var.budget_amount
+    # budget_currency         = var.budget_currency
+    # budget_start_date       = var.budget_start_date
+    # budget_end_date         = var.budget_end_date
+    # notification_threshold  = var.notification_threshold
+    # notification_email      = var.notification_email
+    resource_group          = var.resource_group
+  }
+}
+
+# Write the rendered JSON configuration to a file
+resource "local_file" "info.json" {
+  filename = "${path.module}/info.json"
+  content  = data.template_file.config.rendered
+}
