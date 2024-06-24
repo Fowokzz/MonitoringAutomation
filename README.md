@@ -25,7 +25,7 @@ terraform plan
 8. Execute Script: Execute the Terraform script to create resources in Azure.
 `terraform apply`
 
-9. 8. Destroy Resources: Permanently destroys the resources created in Azure.
+9. Destroy Resources: Permanently destroys the resources created in Azure.
 `terraform destroy`
 P.S: YOU CAN ONLY USE THIS IF YOU'VE NOT MANUALLY EDITED THE SCRIPT AFTER RUNNING `TERRAFORM APPLY`
 
