@@ -1,7 +1,7 @@
 
 #To import subscription details 
-# data "azurerm_subscription" "DeumooreVSEnterprise" {
-#   name = "Deumoore VS Enterprise"
+# data "azurerm_subscription" "**" {
+#   name = "**"
 # }
 # Step 1: Create special resource group for monitoring
 resource "azurerm_resource_group" "monitoring_rg" {
